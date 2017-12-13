@@ -30,8 +30,7 @@
 /.vscode/
 
 # webstorm
-/.idea/workspace.xml
-/.idea/libraries
+/.idea
 
 # yarn
 yarn.lock
