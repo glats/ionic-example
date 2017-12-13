@@ -3,15 +3,17 @@ angular.module('login', [
   'ionic',
   'ngCordova',
   'ui.router',
-  // TODO: load other modules selected during generation
+  'ngStorage'
 ])
-  .config(function ($stateProvider) {
+.config(function ($stateProvider) {
 
-    $stateProvider
-      .state('login', {
-        url: '/login',
-        templateUrl: 'login/templates/login.html',
-        controller: 'LoginController',
-        controllerAs: 'ctrl'
-      });
-  });
+  $stateProvider
+    .state('login', {
+      url: '/login',
+      templateUrl: 'login/templates/login.html',
+      controller: 'LoginController',
+      controllerAs: 'ctrl'
+    });
+
+
+});

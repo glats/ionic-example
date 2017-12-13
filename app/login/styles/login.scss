@@ -12,7 +12,9 @@
     width: 500px;
     margin: 10% auto 0 auto;
     .form-group {
-
+      .alert-label {
+        font-size: 1.2em;
+      }
       .input-group {
         .input-group-addon, .form-control {
           height: 80px;
@@ -46,7 +48,6 @@
         font-weight: bold;
       }
     }
-
 
     .input-group:after,
     .input-group:before {

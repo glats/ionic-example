@@ -69,6 +69,9 @@ body {
   }
 }
 
+.ng-hide.ng-hide-animate {
+  display: none !important;
+}
 
 // Include all of Ionic
 @import "../../bower_components/ionic/scss/ionic";
