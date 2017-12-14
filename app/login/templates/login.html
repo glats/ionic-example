@@ -1,10 +1,10 @@
 <ion-view view-title="Ingreso" hide-nav-bar="true">
-  <ion-content scroll="false" class="login">
-    <div class="img-logo"></div>
+  <ion-content class="login">
+    <img src="login/assets/images/logo.png" class="img-logo center-block img-responsive">
     <form name="loginForm" class="login-form" novalidate ng-submit="ctrl.login(loginForm)">
       <div class="form-group">
         <label class="alert-label" ng-show="ctrl.message">{{ ctrl.message }}</label>
-        <div class="input-group">
+        <div class="input-group ">
           <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
           <input type="text" class="form-control" name="username" placeholder="Usuario"
                  ng-model="ctrl.formParams.username" required>

@@ -4,12 +4,10 @@
   .img-logo {
     width: 367px;
     height: 115px;
-    background: url('../../login/assets/images/logo.png');
-    background-size: cover;
     margin: 20% auto 0 auto;
   }
   .login-form {
-    width: 500px;
+    width: 80%;
     margin: 10% auto 0 auto;
     .form-group {
       .alert-label {
@@ -17,7 +15,7 @@
       }
       .input-group {
         .input-group-addon, .form-control {
-          height: 80px;
+          min-height: 60px;
 
         }
         .form-control {

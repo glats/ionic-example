@@ -18,7 +18,7 @@ $dark:                            #444 !default;
 // The path for our ionicons font files, relative to the built & temporary main.css
 $ionicons-font-path: "../assets/fonts" !default;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-$fa-font-path: "../../bower_components/font-awesome/fonts";
+$fa-font-path: "../../bower_components/font-awesome/fonts" !default;
 
 
 html {
@@ -72,7 +72,10 @@ body {
 .ng-hide.ng-hide-animate {
   display: none !important;
 }
-
+.bar-calm.bar.bar-header {
+  background-color: #0f70a9;
+  height: 100px;
+}
 // Include all of Ionic
 @import "../../bower_components/ionic/scss/ionic";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";

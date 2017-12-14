@@ -12,6 +12,8 @@
 
 # ionic fonts
 /app/main/assets/fonts/ionicons.*
+/app/main/assets/fonts/FontAwesome*.*
+/app/main/assets/fonts/fontawesome*.*
 
 # cordova
 /platforms/
