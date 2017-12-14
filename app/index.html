@@ -20,6 +20,7 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="login/styles/login.css">
     <link rel="stylesheet" href="main/styles/main.css">
+    <link rel="stylesheet" href="wasted/styles/wasted.css">
     <!-- endinject -->
     <!-- endbuild -->
   </head>
@@ -27,8 +28,11 @@
 
     <!-- the nav bar will be updated as we navigate between views -->
     <!-- <ion-nav-bar> can be removed when using sidemenu (contained in menu.html) -->
-    <ion-nav-bar class="bar-calm">
+    <ion-nav-bar class="bar-calm" align-title="center">
       <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <div class="menu-dots"></div>
+      </ion-nav-buttons>
     </ion-nav-bar>
     <!-- the current view will be rendered in the <ion-nav-view> directive -->
     <ion-nav-view></ion-nav-view>
@@ -55,7 +59,11 @@
 
     <!-- build:js scripts/app.js -->
     <!-- inject:js -->
+    <script src="wasted/wasted.js"></script>
+    <script src="wasted/services/wasted-fact.js"></script>
+    <script src="wasted/controllers/wasted-ctrl.js"></script>
     <script src="main/main.js"></script>
+    <script src="main/controllers/main-ctrl.js"></script>
     <script src="main/constants/config-const.js"></script>
     <script src="login/login.js"></script>
     <script src="login/services/login-fact.js"></script>
