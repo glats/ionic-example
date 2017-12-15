@@ -1,3 +1,24 @@
+# Tecnología
+Decidí ocupar ionic primeramente porque es lo que sé y se me hacía más optimo trabajar con el.
+
+Ocupé un generador basado en Yeoman, porque genera una estrucutra muy modular que ayuda a escalar el proyecto en futuros requerimientos. También de que es muy rapido desarrollar una app en poco tiempo, está altamente madura y tiene las herramientas necesarias para crear aplicaciones solidas de manera rapida.
+
+
+A pesar de que la versión tanto de generador como de la versión de ionic no es la última, está altamente mantenida por la comunidad y lo pretenden hacer hasta la nueva versión.
+
+Explicación que da la cumindad para ocupar el generador [https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md)
+
+# Tiempo de desarrollo
+26 horas
+
+# Implementación
+Se instala el [generador](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/quick_start.md):
+```
+$ npm i -g generator-m-ionic
+$ mkdir myProject && cd $_
+$ yo m-ionic
+```
+
 #Pre requisitos
 ### Tener instalado npm, node y herramientas:
 
@@ -29,34 +50,33 @@ Después abrir navedador en [http://localhost:3000](http://localhost:3000)
 #Construcción apk
 
 ```sh
-$ gulp --cordova "build android --release" --env=prod
+$ gulp --cordova "build android --release" --env=prod # creará un apk en platforms/android/build/outputs/apk/android-debug.apk
 ```
+### Construcción de release
+1. Generar apk: `gulp --cordova "build android --release" --env=prod` . Se crea el archivo **android-release-unsigned.apk** en el directorio: platforms/android/build/outputs/apk/
+2. Generar Key: `keytool -genkey -v -keystore nombredetuapp-key.keystore -alias nombredetuapp -keyalg RSA -keysize 2048 -validity 10000`   genera archivo **nombredetuapp-key.keystore**
+3. Recuerda anotar la clave usada para generar  key :grin:
+4. Copiar archivo en el mismo directorio que el apk del paso 1:  project/platforms/android/build/outputs/apk/
+5. Situarse en el directorio anterior y ejecutar **jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore nombredetuapp-key.keystore android-release-unsigned.apk nombredetuapp**
+6. Alinear apk: `zipalign -v 4 android-release-unsigned.apk nombredetuapp.apk`
+7. Genera apk valido con el nombre: **nombredetuapp.apk**
+9. Subir a Google Play primero como version Beta luego pasar a Prod.
+
+[Referencia](https://forum.ionicframework.com/t/android-como-generar-apk-signed-aligned/32130)
 
 #Construcción ipa
 
-```sh
-$ gulp --cordova "build ios --release" --env=prod
-```
+1. Generar apk: `gulp --cordova "build ios --release" --env=prod` . Se crea el carpeta **volta.xcodeproj** en el directorio: platforms/ios/
+2. Abrir Xcode el projecto
+3. Ir a Product y ejecutar Clean
+4. Seleccionar iOS devices para construir, no ocupar el emulador de iOS o si no el archivo quedará deshabilitado
+5. Ir a Product y luego Archive
+6. Elefir la ultima fecha de creación y presionar Distribuir el proyecto
+7. Elegir metodo para la distribución (Guardar Ad hoc)
+8. Elegir perfil (Team) y presionar Exportar
+10. Seleccionar donde guarda el ipa
+
+[Referencia](https://stackoverflow.com/questions/25919449/how-to-generate-an-ios-ipa-file-with-ionic-framework)
 
 
-# Tecnología
-Decidí ocupar ionic primeramente porque es lo que sé y se me hacía más optimo trabajar con el.
-
-Ocupé un generador basado en Yeoman, porque genera una estrucutra muy modular que ayuda a escalar el proyecto en futuros requerimientos. También de que es muy rapido desarrollar una app en poco tiempo, está altamente madura y tiene las herramientas necesarias para crear aplicaciones solidas de manera rapida.
-
-
-A pesar de que la versión tanto de generador como de la versión de ionic no es la última, está altamente mantenida por la comunidad y lo pretenden hacer hasta la nueva versión.
-
-Explicación que da la cumindad para ocupar el generador [https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md)
-
-# Tiempo de desarrollo
-30 horas
-
-# Implementación
-Se instala el [generador](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/quick_start.md):
-```
-$ npm i -g generator-m-ionic
-$ mkdir myProject && cd $_
-$ yo m-ionic
-```
 
