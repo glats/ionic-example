@@ -39,7 +39,7 @@ export ANDROID_HOME=/path/android/sdk
 
 #### En la raíz del proyecto ejecutar:
 ```sh
-$ npm install && bower install && gulp --cordova "prepare"
+$ npm install && bower install && gulp --cordova "prepare" --env=dev
 ```
 #Desarrollo
 ```sh
