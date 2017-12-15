@@ -24,3 +24,8 @@ run live
 ```sh
 gulp watch --env=dev
 ```
+
+## Generate APK
+```sh
+gulp --cordova "build android --release"
+```
