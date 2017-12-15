@@ -1,0 +1,44 @@
+#Pre requisitos
+### Tener instalado npm, node y herramientas:
+
+```
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+$ nvm install node
+$ npm install --global yo gulp bower
+```
+### Configurar ambiente
+Instalar [android studio](https://developer.android.com/studio/install.html) y bajar [sdk de android](https://developer.android.com/studio/intro/update.html#sdk-manager)
+
+Después agregar variables de entorno:
+```
+export JAVA_HOME=/path/java
+export ANDROID_HOME=/path/android/sdk
+```
+#Configuración
+
+#### En la raíz del proyecto ejecutar:
+```sh
+$ npm install && bower install && gulp --cordova "prepare"
+```
+#Desarrollo
+```sh
+$ gulp watch --env=dev
+```
+Después abrir navedador en [http://localhost:3000](http://localhost:3000)
+
+#Construcción
+
+```sh
+$ gulp --cordova "build android" --env=prod
+```
+
+# Tecnología
+Decidí ocupar ionic primeramente porque es lo que sé y se me hacía más optimo trabajar con el.
+
+Ocupé un generador basado en Yeoman, porque genera una estrucutra muy modular que ayuda a escalar el proyecto en futuros requerimientos. También de que es muy rapido desarrollar una app en poco tiempo, está altamente madura y tiene las herramientas necesarias para crear aplicaciones solidas de manera rapida.
+
+
+A pesar de que la versión tanto de generador como de la versión de ionic no es la última, está altamente mantenida por la comunidad y lo pretenden hacer hasta la nueva versión.
+
+Explicación que da la cumindad para ocupar el generador [https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md)
+
