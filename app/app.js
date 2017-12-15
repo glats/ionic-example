@@ -4,6 +4,5 @@ angular.module('volta', [
   'login',
   'wasted',
   'warehouse',
-  'cargo',
   'weight'
 ]);
