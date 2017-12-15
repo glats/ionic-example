@@ -1,4 +1,4 @@
 {
-  "SERVER_URL": "https://PRODSERVER/api",
+  "SERVER_URL": "http://10.0.2.2:10010",
   "SOME_OTHER_URL": "https://echo.getpostman.com"
 }

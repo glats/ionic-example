@@ -1,0 +1,17 @@
+<ion-view view-title="Peso">
+  <ion-content class="main">
+    <div class="main-title"><h2>Cantidad de kilos</h2></div>
+    <div class="weight-content">
+      <div class="form-group">
+        <label class="label-weight" for="weight">Peso en kg.</label>
+        <input type="number" name="weight" id="weight" class="form-control main-input"
+               ng-model="ctrl.value">
+      </div>
+    </div>
+    <div class="main-bottom">
+      <div class="form-group vert-offset-top-10">
+        <button type="button" ng-click="ctrl.next()" class="btn form-control button-main">Siguiente</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

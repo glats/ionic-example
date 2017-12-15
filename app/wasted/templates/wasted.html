@@ -4,13 +4,13 @@
     <div class="main-content">
       <ul class="list-unstyled">
         <li class="list-items-wasted" ng-repeat="wasted in ctrl.wasted track by $index">
-            <div class="main-items-list content-circle">
+            <div class="wasted-items-list content-circle">
               <div class="items-circle">NR</div>
             </div>
-            <div class="main-items-list content-text">
+            <div class="wasted-items-list content-text">
               <div class="items-text">{{ wasted.nombre }}</div>
             </div>
-            <div class="main-items-list content-checkbox">
+            <div class="wasted-items-list content-checkbox">
               <div class="items-checkbox">
                 <div class="checkbox-style">
                   <input id="item-checkbox{{ $index }}" type="checkbox">

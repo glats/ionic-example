@@ -24,36 +24,33 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <platform name="android">
-      <splash src="res/android/drawable-hdpi/background.9.png" density="ldpi" />
-      <splash src="res/android/drawable-mdpi/background.9.png" density="mdpi" />
-      <splash src="res/android/drawable-hdpi/background.9.png" density="hdpi" />
-      <splash src="res/android/drawable-xhdpi/background.9.png" density="xhdpi" />
-      <icon src="res/android/drawable-hdpi/appicon.png" density="ldpi" />
-      <icon src="res/android/drawable-mdpi/appicon.png" density="mdpi" />
-      <icon src="res/android/drawable-hdpi/appicon.png" density="hdpi" />
-      <icon src="res/android/drawable-xhdpi/appicon.png" density="xhdpi" />
+        <splash density="ldpi" src="res/android/drawable-hdpi/background.9.png" />
+        <splash density="mdpi" src="res/android/drawable-mdpi/background.9.png" />
+        <splash density="hdpi" src="res/android/drawable-hdpi/background.9.png" />
+        <splash density="xhdpi" src="res/android/drawable-xhdpi/background.9.png" />
+        <icon density="ldpi" src="res/android/drawable-hdpi/appicon.png" />
+        <icon density="mdpi" src="res/android/drawable-mdpi/appicon.png" />
+        <icon density="hdpi" src="res/android/drawable-hdpi/appicon.png" />
+        <icon density="xhdpi" src="res/android/drawable-xhdpi/appicon.png" />
     </platform>
     <platform name="ios">
-      <splash src="res/ios/iphone/Default@2x.png" width="320" height="480"/>
-      <splash src="res/ios/iphone/Default@2x.png" width="640" height="960"/>
-
-      <splash src="res/ios/iphone/Default-Portrait.png" width="768" height="1024"/>
-      <splash src="res/ios/iphone/Default-Portrait@2x.png" width="1536" height="2048"/>
-
-      <splash src="res/ios/iphone/Default-Landscape.png" width="1024" height="768"/>
-      <splash src="res/ios/iphone/Default-Landscape@2x.png" width="2048" height="1536"/>
-
-      <splash src="res/ios/iphone/Default-568h@2x.png" width="640" height="1136"/>
-      <splash src="res/ios/iphone/Default-667h@2x.png" width="750" height="1334"/>
-      <splash src="res/ios/iphone/Default-Portrait-736h@3x.png" width="1242" height="2208"/>
+        <splash height="480" src="res/ios/iphone/Default@2x.png" width="320" />
+        <splash height="960" src="res/ios/iphone/Default@2x.png" width="640" />
+        <splash height="1024" src="res/ios/iphone/Default-Portrait.png" width="768" />
+        <splash height="2048" src="res/ios/iphone/Default-Portrait@2x.png" width="1536" />
+        <splash height="768" src="res/ios/iphone/Default-Landscape.png" width="1024" />
+        <splash height="1536" src="res/ios/iphone/Default-Landscape@2x.png" width="2048" />
+        <splash height="1136" src="res/ios/iphone/Default-568h@2x.png" width="640" />
+        <splash height="1334" src="res/ios/iphone/Default-667h@2x.png" width="750" />
+        <splash height="2208" src="res/ios/iphone/Default-Portrait-736h@3x.png" width="1242" />
     </platform>
-    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
     <engine name="ios" spec="~4.5.1" />
     <engine name="android" spec="~6.2.2" />
     <plugin name="cordova-plugin-device" spec="~1.1.7" />
-    <plugin name="cordova-plugin-dialogs" spec="~1.3.4" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
     <plugin name="cordova-plugin-network-information" spec="~1.3.4" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.1.0" />
     <plugin name="cordova-plugin-statusbar" spec="~2.3.0" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.3.4" />
 </widget>

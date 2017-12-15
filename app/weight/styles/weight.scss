@@ -1,0 +1,42 @@
+.weight-content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 30px;
+  .form-group {
+    .label-weight{
+      font-size: 1.8em;
+      color: #9a9a9a;
+    }
+    .form-control {
+
+      min-height: 80px;
+      border-radius: 0;
+      -webkit-appearance: none;
+      box-shadow: unset;
+      font-size: 6vh;
+    }
+
+    .form-control:focus {
+      border-color: unset;
+      outline: 0 !important;
+      box-shadow: unset;
+    }
+
+    .weight-list {
+      position: absolute;
+      width: 110%;
+      background: #FFFFFF;
+      left: -5%;
+      color: #868686;
+      li {
+        min-height: 80px;
+        font-size: 6vh;
+        line-height: 80px;
+        border-bottom: solid 0.5px #dcd6d6;
+        padding: 10px;
+      }
+    }
+  }
+
+}
