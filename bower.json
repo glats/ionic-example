@@ -23,7 +23,8 @@
         "fonts/fontawesome-webfont.eot",
         "fonts/fontawesome-webfont.ttf",
         "fonts/fontawesome-webfont.woff",
-        "fonts/fontawesome-webfont.woff2"
+        "fonts/fontawesome-webfont.woff2",
+        "fonts/fontawesome-webfont.svg"
       ]
     },
     "bootstrap-sass": {
