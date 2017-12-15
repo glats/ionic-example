@@ -28,20 +28,24 @@
       <splash src="res/android/drawable-mdpi/background.9.png" density="mdpi" />
       <splash src="res/android/drawable-hdpi/background.9.png" density="hdpi" />
       <splash src="res/android/drawable-xhdpi/background.9.png" density="xhdpi" />
+      <icon src="res/android/drawable-hdpi/appicon.png" density="ldpi" />
+      <icon src="res/android/drawable-mdpi/appicon.png" density="mdpi" />
+      <icon src="res/android/drawable-hdpi/appicon.png" density="hdpi" />
+      <icon src="res/android/drawable-xhdpi/appicon.png" density="xhdpi" />
     </platform>
     <platform name="ios">
-      <splash src="res/screen/ios/iphone/Default@2x.png" width="320" height="480"/>
-      <splash src="res/screen/ios/iphone/Default@2x.png" width="640" height="960"/>
+      <splash src="res/ios/iphone/Default@2x.png" width="320" height="480"/>
+      <splash src="res/ios/iphone/Default@2x.png" width="640" height="960"/>
 
-      <splash src="res/screen/ios/iphone/Default-Portrait.png" width="768" height="1024"/>
-      <splash src="res/screen/ios/iphone/Default-Portrait@2x.png" width="1536" height="2048"/>
+      <splash src="res/ios/iphone/Default-Portrait.png" width="768" height="1024"/>
+      <splash src="res/ios/iphone/Default-Portrait@2x.png" width="1536" height="2048"/>
 
-      <splash src="res/screen/ios/iphone/Default-Landscape.png" width="1024" height="768"/>
-      <splash src="res/screen/ios/iphone/Default-Landscape@2x.png" width="2048" height="1536"/>
+      <splash src="res/ios/iphone/Default-Landscape.png" width="1024" height="768"/>
+      <splash src="res/ios/iphone/Default-Landscape@2x.png" width="2048" height="1536"/>
 
-      <splash src="res/screen/ios/iphone/Default-568h@2x.png" width="640" height="1136"/>
-      <splash src="res/screen/ios/iphone/Default-667h@2x.png" width="750" height="1334"/>
-      <splash src="res/screen/ios/iphone/Default-Portrait-736h@3x.png" width="1242" height="2208"/>
+      <splash src="res/ios/iphone/Default-568h@2x.png" width="640" height="1136"/>
+      <splash src="res/ios/iphone/Default-667h@2x.png" width="750" height="1334"/>
+      <splash src="res/ios/iphone/Default-Portrait-736h@3x.png" width="1242" height="2208"/>
     </platform>
     <preference name="ShowSplashScreenSpinner" value="false"/>
     <engine name="ios" spec="~4.5.1" />

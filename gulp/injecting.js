@@ -59,8 +59,7 @@ gulp.task('bower-fonts', function () {
   // to app/main/assets/fonts (path can be set in app/main/styles/<module>.scss)
   var DEST = 'app/main/assets/fonts';
   var fontFiles = mainBowerFiles({filter: /\.(eot|otf|svg|ttf|woff|woff2)$/i})
-    .concat('app/main/assets/fonts/**/*')
-    .concat('app/bower_components/font-awesome/fonts/**/*');
+    .concat('app/main/assets/fonts/**/*');
 
   return gulp.src(fontFiles)
     .pipe($.changed(DEST))
