@@ -1,0 +1,168 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+$headings-font-family: "-apple-system", "Roboto", "Segoe UI", sans-serif !default;
+
+// The path for our ionicons font files, relative to the built & temporary main.css
+$ionicons-font-path: "../assets/fonts" !default;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "../../bower_components/font-awesome/fonts" !default;
+
+@font-face {
+  src: url('../assets/fonts/Roboto.ttf');
+  src: url('../assets/fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Roboto.woff') format('woff'),
+  url('../assets/fonts/Roboto.ttf') format('truetype'),
+  url('../assets/fonts/Roboto.svg#svgFontName') format('svg');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('../assets/fonts/Roboto-Medium.ttf');
+  src: url('../assets/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Roboto-Medium.woff') format('woff'),
+  url('../assets/fonts/Roboto-Medium.ttf') format('truetype'),
+  url('../assets/fonts/Roboto-Medium.svg#svgFontName') format('svg');
+  font-family: 'Roboto-Medium';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('../assets/fonts/Roboto-Bold.ttf');
+  src: url('../assets/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Roboto-Bold.woff') format('woff'),
+  url('../assets/fonts/Roboto-Bold.ttf') format('truetype'),
+  url('../assets/fonts/Roboto-Bold.svg#svgFontName') format('svg');
+  font-family: 'Roboto-Bold';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('../assets/fonts/fontawesome-webfont.ttf');
+  src: url('../assets/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/fontawesome-webfont.woff') format('woff'),
+  url('../assets/fonts/fontawesome-webfont.ttf') format('truetype'),
+  url('../assets/fonts/fontawesome-webfont.svg#svgFontName') format('svg');
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "-apple-system", "Roboto", "Segoe UI", sans-serif !important;
+  font-weight: normal !important;
+  min-height: 100% !important;
+  color: #FFFFFF !important;
+}
+
+.fa {
+  font-family: FontAwesome, sans-serif !important;
+}
+
+.fa.fa-2 {
+  font-size: 2em;
+}
+
+.fa.fa-3 {
+  font-size: 4em;
+}
+
+.fa.fa-4 {
+  font-size: 7em;
+}
+
+.fa.fa-5 {
+  font-size: 12em;
+}
+
+.fa.fa-6 {
+  font-size: 20em;
+}
+
+@for $i from 0 through 12 {
+  .vert-offset-top-#{$i} {
+    margin-top: #{$i}em;
+  }
+
+  .vert-offset-bottom-#{$i} {
+    margin-bottom: #{$i}em;
+  }
+}
+
+.ng-hide.ng-hide-animate {
+  display: none !important;
+}
+
+.bar-calm.bar.bar-header {
+  background: #0f70a9;
+  color: #fff;
+  height: 90px;
+  display: flex;
+  align-items: center;
+
+  .title {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    height: 100%;
+  }
+
+  .menu-dots {
+    width: 10px;
+    height: 10px;
+    margin: 20px 20px 0 0;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 15px 0 white, 0 30px 0 white;
+
+  }
+
+  .back-button {
+    margin-top: 5px;
+    .icon {
+      margin-left: 20px;
+      &:before {
+        font-size: 2.8em;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+input[type=radio],
+input[type=checkbox] {
+  visibility: hidden;
+}
+// Include all of Ionic
+@import "../../bower_components/ionic/scss/ionic";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
