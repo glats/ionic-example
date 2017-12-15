@@ -19,7 +19,7 @@ $headings-font-family: "-apple-system", "Roboto", "Segoe UI", sans-serif !defaul
 // The path for our ionicons font files, relative to the built & temporary main.css
 $ionicons-font-path: "../assets/fonts" !default;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-$fa-font-path: "../../bower_components/font-awesome/fonts" !default;
+$fa-font-path: "../../bower_components/font-awesome/fonts";
 
 @font-face {
   src: url('../assets/fonts/Roboto.ttf');
