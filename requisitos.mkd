@@ -26,11 +26,18 @@ $ gulp watch --env=dev
 ```
 Después abrir navedador en [http://localhost:3000](http://localhost:3000)
 
-#Construcción
+#Construcción apk
 
 ```sh
-$ gulp --cordova "build android" --env=prod
+$ gulp --cordova "build android --release" --env=prod
 ```
+
+#Construcción ipa
+
+```sh
+$ gulp --cordova "build ios --release" --env=prod
+```
+
 
 # Tecnología
 Decidí ocupar ionic primeramente porque es lo que sé y se me hacía más optimo trabajar con el.
@@ -41,4 +48,15 @@ Ocupé un generador basado en Yeoman, porque genera una estrucutra muy modular q
 A pesar de que la versión tanto de generador como de la versión de ionic no es la última, está altamente mantenida por la comunidad y lo pretenden hacer hasta la nueva versión.
 
 Explicación que da la cumindad para ocupar el generador [https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/why_you_need_it.md)
+
+# Tiempo de desarrollo
+30 horas
+
+# Implementación
+Se instala el [generador](https://github.com/mwaylabs/generator-m-ionic/blob/master/docs/intro/quick_start.md):
+```
+$ npm i -g generator-m-ionic
+$ mkdir myProject && cd $_
+$ yo m-ionic
+```
 
