@@ -13,30 +13,16 @@
       min-height: 80px;
       border-radius: 0;
       -webkit-appearance: none;
-      box-shadow: unset;
-      font-size: 6vh;
+      box-shadow: inset 0 1px 1px #FFFFFF;
+      font-size: 1.8em;
     }
 
     .form-control:focus {
-      border-color: unset;
+      border-color: #FFFFFF;
       outline: 0 !important;
-      box-shadow: unset;
+      box-shadow: inset 0 1px 1px #FFFFFF;
     }
 
-    .weight-list {
-      position: absolute;
-      width: 110%;
-      background: #FFFFFF;
-      left: -5%;
-      color: #868686;
-      li {
-        min-height: 80px;
-        font-size: 6vh;
-        line-height: 80px;
-        border-bottom: solid 0.5px #dcd6d6;
-        padding: 10px;
-      }
-    }
   }
 
 }
